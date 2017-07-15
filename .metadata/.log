@@ -440,3 +440,18 @@ org.eclipse.core.runtime.CoreException: Variable references non-existent resourc
 
 !ENTRY org.eclipse.m2e.logback.appender 4 0 2017-07-16 02:17:20.671
 !MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-07-16 03:06:42.363
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-07-16 03:11:14.453
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-07-16 03:14:04.487
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-07-16 03:19:19.279
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-07-16 03:19:26.156
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled

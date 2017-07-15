@@ -14,11 +14,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.swiggy.model.ItemSummary;
 import com.swiggy.model.OrderAndRestaurants;
 import com.swiggy.model.OrderDetails;
 import com.swiggy.model.OrderItems;
-import com.swiggy.model.OrderSummary;
 import com.swiggy.model.RestaurantItems;
 import com.swiggy.model.Restaurants;
 
@@ -149,8 +147,8 @@ public class APIController {
 				Statement st2 = connection.createStatement();
 				st2.execute(
 						"INSERT INTO order_details_new(order_id, customer_id, customer_lat, customer_lng, restaurant_id) VALUES ("
-								+ orderId + ", " + rs.getLong(1) + ", " + rs.getDouble(2) + ", " + rs.getDouble(3)
-								+ ", " + order.getRestId() + ")");
+								+ orderId + ", " + rs.getLong(1) + ", " + rs.getDouble(2) + ", " + rs.getDouble(3) + ", "
+								+ order.getRestId() + ")");
 			}
 
 		} catch (SQLException e) {
@@ -216,52 +214,6 @@ public class APIController {
 			e.printStackTrace();
 		}
 
-		return ls;
-	}
-
-	// API5- fetch order summary-done
-	@RequestMapping(value = "/ordersummary", method = RequestMethod.GET, produces = "application/json")
-	List<OrderSummary> orderSummary(@RequestParam("orderId") long orderId) {
-		List<OrderSummary> ls = new ArrayList<>();
-		List<ItemSummary> is = new ArrayList<>();
-		Connection connection = null;
-		try {
-			connection = DriverManager.getConnection("jdbc:mysql://localhost/swiggy?" + "user=root&password=root");
-
-			Statement st = connection.createStatement();
-
-			String query = "SELECT o.restaurant_id, r.name from order_details_new o inner join restaurants r on o.restaurant_id=r.id and o.order_id="
-					+ orderId;
-			ResultSet rs = st.executeQuery(query);
-			while (rs.next()) {
-				OrderSummary os = new OrderSummary();
-				float restAmt = 0;
-				int restQty = 0;
-				long rest_id = rs.getLong(1);
-				String rest_name = rs.getString(2);
-				Statement st1 = connection.createStatement();
-				String query1 = "select o.item_id, m.item_name, m.item_price, o.quantity from order_items o inner join restaurant_menu m on o.item_id=m.id and m.restaurant_id="
-						+ rest_id +" and o.order_id="+orderId;
-				ResultSet rs1 = st1.executeQuery(query1);
-				is = new ArrayList<>();
-				while (rs1.next()) {
-					long item_id = rs1.getLong(1);
-					String item_name = rs1.getString(2);
-					float price = rs1.getFloat(3);
-					int qty = rs1.getInt(4);
-
-					restQty += qty;
-					restAmt += (qty * price);
-					ItemSummary item = new ItemSummary(item_id, item_name, price, qty);
-					is.add(item);
-				}
-				os = new OrderSummary(rest_id, rest_name, restQty, restAmt, is);
-				ls.add(os);
-			}
-
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
 		return ls;
 	}
 

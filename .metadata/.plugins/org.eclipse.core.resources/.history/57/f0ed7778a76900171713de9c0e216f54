@@ -219,7 +219,7 @@ public class APIController {
 		return ls;
 	}
 
-	// API5- fetch order summary-done
+	// API5- fetch order summary
 	@RequestMapping(value = "/ordersummary", method = RequestMethod.GET, produces = "application/json")
 	List<OrderSummary> orderSummary(@RequestParam("orderId") long orderId) {
 		List<OrderSummary> ls = new ArrayList<>();
