@@ -167,3 +167,18 @@ java.io.IOException: http://marketplace.eclipse.org/content/buildship-gradle-int
 
 !ENTRY org.eclipse.m2e.logback.appender 4 0 2017-07-15 20:55:43.609
 !MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-07-15 21:13:21.940
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-07-15 21:17:49.874
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-07-15 21:17:55.333
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-07-15 21:17:56.217
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-07-15 21:17:57.427
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
