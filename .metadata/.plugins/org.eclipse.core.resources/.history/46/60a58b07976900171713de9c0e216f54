@@ -123,7 +123,7 @@ public class APIController {
 		return ls;
 	}
 
-	// API3-Save order-done
+	// API3-Save order-working
 
 	@RequestMapping(value = "/saveorder", method = RequestMethod.POST)
 	String saveOrder(@RequestBody OrderDetails order) {
@@ -147,7 +147,7 @@ public class APIController {
 				Statement st2 = connection.createStatement();
 				st2.execute(
 						"INSERT INTO order_details_new(order_id, customer_id, customer_lat, customer_lng, restaurant_id) VALUES ("
-								+ orderId + ", " + rs.getLong(1) + ", " + rs.getDouble(2) + ", " + rs.getDouble(3) + ", "
+								+ orderId + ", " + rs.getLong(1) + ", " + rs.getLong(2) + ", " + rs.getLong(3) + ", "
 								+ order.getRestId() + ")");
 			}
 
@@ -155,66 +155,6 @@ public class APIController {
 			e.printStackTrace();
 		}
 		return "Success";
-	}
-
-	// API4- fetch second restaurant-done
-	@RequestMapping(value = "/getsecondrestaurants", method = RequestMethod.GET, produces = "application/json")
-	List<Restaurants> secondRestaurants(@RequestParam("orderId") long orderId) {
-
-		double min_lat = 0, min_long = 0, max_lat = 0, max_long = 0;
-		double rest_lat = 0, rest_long = 0, cust_lat = 0, cust_long = 0;
-
-		List<Restaurants> ls = new ArrayList<>();
-
-		Connection connection = null;
-		try {
-			connection = DriverManager.getConnection("jdbc:mysql://localhost/swiggy?" + "user=root&password=root");
-
-			Statement st = connection.createStatement();
-
-			String query = "SELECT r.lat, r.lng, o.customer_lat, o.customer_lng from order_details_new o inner join restaurants r on o.restaurant_id=r.id and o.order_id="
-					+ orderId;
-			ResultSet rs = st.executeQuery(query);
-
-			while (rs.next()) {
-				rest_lat = rs.getDouble(1);
-				rest_long = rs.getDouble(2);
-				cust_lat = rs.getDouble(3);
-				cust_long = rs.getDouble(4);
-
-			}
-
-			if (rest_lat < cust_lat) {
-				min_lat = rest_lat;
-				max_lat = cust_lat;
-			} else {
-				min_lat = cust_lat;
-				max_lat = rest_lat;
-			}
-			if (rest_long < cust_long) {
-				min_long = rest_long;
-				max_long = cust_long;
-			} else {
-				min_long = cust_long;
-				max_long = rest_long;
-			}
-
-			Statement st1 = connection.createStatement();
-
-			query = "SELECT id, name, avg_rating from restaurants where lat>= " + min_lat + "and lat <=" + max_lat
-					+ " and lng>=" + min_long + " and lng<=" + max_long + " order by avg_rating desc limit 50";
-			ResultSet rs1 = st1.executeQuery(query);
-
-			while (rs1.next()) {
-				Restaurants rest = new Restaurants(rs1.getLong(1), rs1.getString(2), rs1.getFloat(3));
-				ls.add(rest);
-			}
-
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-
-		return ls;
 	}
 
 }

@@ -147,7 +147,7 @@ public class APIController {
 				Statement st2 = connection.createStatement();
 				st2.execute(
 						"INSERT INTO order_details_new(order_id, customer_id, customer_lat, customer_lng, restaurant_id) VALUES ("
-								+ orderId + ", " + rs.getLong(1) + ", " + rs.getDouble(2) + ", " + rs.getDouble(3) + ", "
+								+ orderId + ", " + rs.getLong(1) + ", " + rs.getLong(2) + ", " + rs.getLong(3) + ", "
 								+ order.getRestId() + ")");
 			}
 
@@ -172,7 +172,7 @@ public class APIController {
 
 			Statement st = connection.createStatement();
 
-			String query = "SELECT r.lat, r.lng, o.customer_lat, o.customer_lng from order_details_new o inner join restaurants r on o.restaurant_id=r.id and o.order_id="
+			String query = "SELECT r.lat, r.lng, o.customer_lat, o.customer_lng from order_details_new o inner join restaurants r at o.restaurant_id=r.id where o.order_id="
 					+ orderId;
 			ResultSet rs = st.executeQuery(query);
 

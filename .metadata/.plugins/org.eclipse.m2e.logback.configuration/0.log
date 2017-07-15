@@ -823,3 +823,99 @@ org.eclipse.core.runtime.CoreException: Variable references non-existent resourc
 2017-07-16 00:25:04,265 [Worker-262] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2017-07-16 00:25:04,269 [Worker-262] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2017-07-16 00:25:04,270 [Worker-262] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\i318443\Desktop\Swiggy\Swiggy-Hackathrone\Swiggy-API\src\test\resources
+2017-07-16 01:21:45,097 [Worker-290] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2017-07-16 01:21:45,103 [Worker-290] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-16 01:21:45,106 [Worker-290] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-07-16 01:21:45,108 [Worker-290] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-16 01:21:45,110 [Worker-290] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-16 01:21:45,110 [Worker-290] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\i318443\Desktop\Swiggy\Swiggy-Hackathrone\Swiggy-API\src\test\resources
+2017-07-16 01:21:55,099 [Worker-292] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2017-07-16 01:21:55,103 [Worker-292] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-16 01:21:55,104 [Worker-292] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-07-16 01:21:55,106 [Worker-292] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-16 01:21:55,108 [Worker-292] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-16 01:21:55,108 [Worker-292] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\i318443\Desktop\Swiggy\Swiggy-Hackathrone\Swiggy-API\src\test\resources
+2017-07-16 01:23:43,355 [Worker-288] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2017-07-16 01:23:43,358 [Worker-288] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-16 01:23:43,360 [Worker-288] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-07-16 01:23:43,362 [Worker-288] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-16 01:23:43,364 [Worker-288] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-16 01:23:43,364 [Worker-288] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\i318443\Desktop\Swiggy\Swiggy-Hackathrone\Swiggy-API\src\test\resources
+2017-07-16 01:23:52,762 [Worker-288] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-07-16 01:23:52,780 [Worker-288] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2017-07-16 01:23:53,233 [Worker-288] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.swiggy.hackathrone:Swiggy-API2-FetchRestaurantItems:0.0.1-SNAPSHOT @ C:\Users\i318443\Desktop\Swiggy\Swiggy-Hackathrone\Swiggy-API\pom.xml.
+2017-07-16 01:23:53,514 [Worker-288] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2017-07-16 01:23:53,609 [Worker-288] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Swiggy-API/src/main/java
+2017-07-16 01:23:53,609 [Worker-288] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Swiggy-API/src/main/resources
+2017-07-16 01:23:53,610 [Worker-288] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Swiggy-API/src/main/resources
+2017-07-16 01:23:53,611 [Worker-288] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Swiggy-API/src/test/java
+2017-07-16 01:23:53,724 [Worker-288] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2017-07-16 01:23:54,758 [Worker-295] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2017-07-16 01:23:54,771 [Worker-295] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-16 01:23:54,772 [Worker-295] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-07-16 01:23:54,784 [Worker-295] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-16 01:23:54,787 [Worker-295] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-16 01:23:54,788 [Worker-295] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\i318443\Desktop\Swiggy\Swiggy-Hackathrone\Swiggy-API\src\test\resources
+2017-07-16 01:26:37,365 [Worker-289] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2017-07-16 01:26:37,368 [Worker-289] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-16 01:26:37,371 [Worker-289] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-07-16 01:26:37,373 [Worker-289] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-16 01:26:37,375 [Worker-289] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-16 01:26:37,375 [Worker-289] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\i318443\Desktop\Swiggy\Swiggy-Hackathrone\Swiggy-API\src\test\resources
+2017-07-16 01:26:38,566 [Worker-289] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-07-16 01:26:38,595 [Worker-289] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2017-07-16 01:26:39,056 [Worker-289] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.swiggy.hackathrone:Swiggy-API2-FetchRestaurantItems:0.0.1-SNAPSHOT @ C:\Users\i318443\Desktop\Swiggy\Swiggy-Hackathrone\Swiggy-API\pom.xml.
+2017-07-16 01:26:39,269 [Worker-289] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2017-07-16 01:26:39,352 [Worker-289] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Swiggy-API/src/main/java
+2017-07-16 01:26:39,352 [Worker-289] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Swiggy-API/src/main/resources
+2017-07-16 01:26:39,353 [Worker-289] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Swiggy-API/src/main/resources
+2017-07-16 01:26:39,353 [Worker-289] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Swiggy-API/src/test/java
+2017-07-16 01:26:39,524 [Worker-289] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2017-07-16 01:26:40,268 [Worker-290] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2017-07-16 01:26:40,281 [Worker-290] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-16 01:26:40,282 [Worker-290] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-07-16 01:26:40,290 [Worker-290] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-16 01:26:40,292 [Worker-290] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-16 01:26:40,292 [Worker-290] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\i318443\Desktop\Swiggy\Swiggy-Hackathrone\Swiggy-API\src\test\resources
+2017-07-16 01:29:43,258 [Worker-291] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2017-07-16 01:29:43,262 [Worker-291] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-16 01:29:43,264 [Worker-291] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-07-16 01:29:43,268 [Worker-291] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-16 01:29:43,270 [Worker-291] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-16 01:29:43,270 [Worker-291] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\i318443\Desktop\Swiggy\Swiggy-Hackathrone\Swiggy-API\src\test\resources
+2017-07-16 01:29:48,560 [Worker-298] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-07-16 01:29:48,577 [Worker-298] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2017-07-16 01:29:49,018 [Worker-298] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.swiggy.hackathrone:Swiggy-API2-FetchRestaurantItems:0.0.1-SNAPSHOT @ C:\Users\i318443\Desktop\Swiggy\Swiggy-Hackathrone\Swiggy-API\pom.xml.
+2017-07-16 01:29:49,281 [Worker-298] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2017-07-16 01:29:49,372 [Worker-298] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Swiggy-API/src/main/java
+2017-07-16 01:29:49,373 [Worker-298] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Swiggy-API/src/main/resources
+2017-07-16 01:29:49,374 [Worker-298] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Swiggy-API/src/main/resources
+2017-07-16 01:29:49,374 [Worker-298] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Swiggy-API/src/test/java
+2017-07-16 01:29:49,479 [Worker-298] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2017-07-16 01:29:50,089 [Worker-293] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2017-07-16 01:29:50,116 [Worker-293] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-16 01:29:50,116 [Worker-293] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-07-16 01:29:50,129 [Worker-293] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-16 01:29:50,133 [Worker-293] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-16 01:29:50,133 [Worker-293] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\i318443\Desktop\Swiggy\Swiggy-Hackathrone\Swiggy-API\src\test\resources
+2017-07-16 01:32:13,453 [Worker-293] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2017-07-16 01:32:13,456 [Worker-293] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-16 01:32:13,458 [Worker-293] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-07-16 01:32:13,461 [Worker-293] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-16 01:32:13,462 [Worker-293] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-16 01:32:13,463 [Worker-293] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\i318443\Desktop\Swiggy\Swiggy-Hackathrone\Swiggy-API\src\test\resources
+2017-07-16 01:32:31,620 [Worker-293] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-07-16 01:32:31,639 [Worker-293] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2017-07-16 01:32:32,069 [Worker-293] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.swiggy.hackathrone:Swiggy-API2-FetchRestaurantItems:0.0.1-SNAPSHOT @ C:\Users\i318443\Desktop\Swiggy\Swiggy-Hackathrone\Swiggy-API\pom.xml.
+2017-07-16 01:32:32,287 [Worker-293] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2017-07-16 01:32:32,354 [Worker-293] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Swiggy-API/src/main/java
+2017-07-16 01:32:32,355 [Worker-293] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Swiggy-API/src/main/resources
+2017-07-16 01:32:32,355 [Worker-293] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Swiggy-API/src/main/resources
+2017-07-16 01:32:32,355 [Worker-293] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Swiggy-API/src/test/java
+2017-07-16 01:32:32,499 [Worker-293] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2017-07-16 01:32:33,424 [Worker-310] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2017-07-16 01:32:33,435 [Worker-310] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-16 01:32:33,435 [Worker-310] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-07-16 01:32:33,443 [Worker-310] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-16 01:32:33,445 [Worker-310] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-16 01:32:33,445 [Worker-310] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\i318443\Desktop\Swiggy\Swiggy-Hackathrone\Swiggy-API\src\test\resources
