@@ -82,7 +82,7 @@ public class APIController {
 			}
 
 			// create new customer lat long
-			long orderId = (long) Math.floor((Math.random() % 10000000) * 10000000);
+			long orderId = (long) (Math.random() % 10000000) * 10000000;
 			query = "insert into order_cust values(" + orderId + ", " + custId + ", " + lat + ", " + lng + ")";
 			Statement st1 = connection.createStatement();
 			st1.execute(query);

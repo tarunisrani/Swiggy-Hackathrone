@@ -1,0 +1,35 @@
+package com.swiggy.model;
+
+import java.util.List;
+
+public class OrderAndRestaurants {
+	double orderId;
+	List<Restaurants> ls;
+
+	public OrderAndRestaurants() {
+		super();
+	}
+
+	public OrderAndRestaurants(double orderId, List<Restaurants> ls) {
+		super();
+		this.orderId = orderId;
+		this.ls = ls;
+	}
+
+	public double getOrderId() {
+		return orderId;
+	}
+
+	public void setOrderId(double orderId) {
+		this.orderId = orderId;
+	}
+
+	public List<Restaurants> getLs() {
+		return ls;
+	}
+
+	public void setLs(List<Restaurants> ls) {
+		this.ls = ls;
+	}
+
+}
