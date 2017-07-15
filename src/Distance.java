@@ -40,11 +40,9 @@ Final latitude = start_latitude + delta_latitude
 	public static void main(String args[]){
 		double start_latitude = 12.9280026;
 		double start_longitude = 77.6020568;
-		double lat_2;
-		double long_2;
-		//		double lat_2 = Math.asin(Math.sin(lat_1)* Math.cos(a))
-
-		double dx, dy, delta_lat, delta_long, R, theta;
+		double distance = 500;
+		
+		/*double dx, dy, delta_lat, delta_long, R, theta;
 		
 		double degree = 180;
 		
@@ -59,10 +57,16 @@ Final latitude = start_latitude + delta_latitude
 
 
 		System.out.println("Final positions: "+ Final_latitude + ","+ Final_longitude);
+		*/
+		
+		getLatLong(start_latitude, start_longitude, 0, distance);
+		getLatLong(start_latitude, start_longitude, 90, distance);
+		getLatLong(start_latitude, start_longitude, 180, distance);
+		getLatLong(start_latitude, start_longitude, 270, distance);
 		
 	}
 	
-	private void getLatLong(double start_latitude, double start_longitude, double degree){
+	private static void getLatLong(double start_latitude, double start_longitude, double degree, double distance){
 //		double start_latitude = 12.9280026;
 //		double start_longitude = 77.6020568;
 		double lat_2;
@@ -73,8 +77,8 @@ Final latitude = start_latitude + delta_latitude
 		
 //		double degree = 180;
 		
-		dx = 500 * Math.cos(Math.toRadians(degree)); 
-		dy = 500 * Math.sin(Math.toRadians(degree)); 
+		dx = distance * Math.cos(Math.toRadians(degree)); 
+		dy = distance * Math.sin(Math.toRadians(degree)); 
 
 
 		double delta_longitude = dx/(111320*Math.cos(Math.toRadians(start_latitude))); 
