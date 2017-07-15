@@ -480,3 +480,9 @@ Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was
 2017-07-15 20:21:21,638 [Worker-131] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2017-07-15 20:21:21,640 [Worker-131] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2017-07-15 20:21:21,640 [Worker-131] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\i318443\Desktop\Swiggy\Swiggy-Hackathrone\Swiggy-API\src\test\resources
+2017-07-15 20:55:43,609 [Worker-136] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2017-07-15 20:55:43,612 [Worker-136] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-15 20:55:43,613 [Worker-136] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-07-15 20:55:43,615 [Worker-136] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 20:55:43,616 [Worker-136] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-15 20:55:43,617 [Worker-136] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\i318443\Desktop\Swiggy\Swiggy-Hackathrone\Swiggy-API\src\test\resources

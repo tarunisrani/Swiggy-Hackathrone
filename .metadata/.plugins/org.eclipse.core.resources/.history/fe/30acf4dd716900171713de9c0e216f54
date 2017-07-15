@@ -19,7 +19,7 @@ import com.swiggy.model.Restaurants;
 @RestController
 public class APIController {
 
-	// to get nearby lat long in 1km radius-done
+	// to get nearby lat long in 2km radius
 	double[] getLatLong(double start_latitude, double start_longitude) {
 
 		double[] places = new double[8];
@@ -44,7 +44,7 @@ public class APIController {
 		return places;
 	}
 
-	// API1-Fetch Nearby Restaurants-done
+	// API1-Fetch Nearby Restaurants-working
 
 	@RequestMapping(value = "/getrestaurants", method = RequestMethod.GET, produces = "application/json")
 	List<Restaurants> restaurants(@RequestParam("lat") double lat, @RequestParam("lng") double lng) {
