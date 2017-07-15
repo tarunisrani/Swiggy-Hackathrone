@@ -1,0 +1,109 @@
+!SESSION 2017-07-15 17:01:02.775 -----------------------------------------------
+eclipse.buildId=3.8.4.201703310825-RELEASE-e46
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springsource.sts.ide -product org.springsource.sts.ide -product org.springsource.sts.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springsource.sts.ide -product org.springsource.sts.ide -data C:\Users\i318443\Desktop\Swiggy\Swiggy-Hackathrone -product org.springsource.sts.ide
+
+!ENTRY org.eclipse.ui 2 2 2017-07-15 17:01:10.720
+!MESSAGE org.eclipse.jdt.junit.ResultView: Deprecated relationship "fast" should be converted to "stack".
+
+!ENTRY org.eclipse.ui 2 2 2017-07-15 17:01:10.720
+!MESSAGE org.springframework.ide.eclipse.aop.ui.navigator.aopReferenceModelNavigator: Deprecated relationship "fast" should be converted to "stack".
+
+!ENTRY org.eclipse.ui 2 2 2017-07-15 17:01:10.720
+!MESSAGE org.eclipse.contribution.xref.ui.views.XReferenceView: Deprecated relationship "fast" should be converted to "stack".
+
+!ENTRY org.eclipse.jface.text 2 0 2017-07-15 17:01:11.340
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-07-15 17:01:11.341
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.core.net 4 0 2017-07-15 17:01:15.048
+!MESSAGE WinHttp.GetProxyForUrl for pac failed with error 'The proxy auto-configuration script could not be downloaded
+' #12167.
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-07-15 17:29:05.234
+!MESSAGE Failed to read Maven project: 1 problem was encountered while building the effective model for com.swiggy.hackathrone:Swiggy-API2-FetchRestaurantItems:0.0.1-SNAPSHOT
+[FATAL] Non-resolvable parent POM for com.swiggy.hackathrone:Swiggy-API2-FetchRestaurantItems:0.0.1-SNAPSHOT: Failure to transfer org.springframework.boot:spring-boot-starter-parent:pom:1.5.4.RELEASE from http://nexus:8081/nexus/content/groups/build.snapshots/ was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.boot:spring-boot-starter-parent:pom:1.5.4.RELEASE from/to central (http://nexus:8081/nexus/content/groups/build.snapshots/): nexus and 'parent.relativePath' points at no local POM @ line 14, column 10
+ for project com.swiggy.hackathrone:Swiggy-API2-FetchRestaurantItems:0.0.1-SNAPSHOT at C:\Users\i318443\Desktop\Swiggy\Swiggy-Hackathrone\Swiggy-API2-FetchRestaurantItems\pom.xml
+!STACK 0
+org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model for com.swiggy.hackathrone:Swiggy-API2-FetchRestaurantItems:0.0.1-SNAPSHOT
+[FATAL] Non-resolvable parent POM for com.swiggy.hackathrone:Swiggy-API2-FetchRestaurantItems:0.0.1-SNAPSHOT: Failure to transfer org.springframework.boot:spring-boot-starter-parent:pom:1.5.4.RELEASE from http://nexus:8081/nexus/content/groups/build.snapshots/ was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.boot:spring-boot-starter-parent:pom:1.5.4.RELEASE from/to central (http://nexus:8081/nexus/content/groups/build.snapshots/): nexus and 'parent.relativePath' points at no local POM @ line 14, column 10
+ for project com.swiggy.hackathrone:Swiggy-API2-FetchRestaurantItems:0.0.1-SNAPSHOT at C:\Users\i318443\Desktop\Swiggy\Swiggy-Hackathrone\Swiggy-API2-FetchRestaurantItems\pom.xml
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:168)
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:119)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProject(MavenImpl.java:636)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:816)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:967)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:811)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:192)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:80)
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:259)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:732)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$5.run(MavenPomEditor.java:1053)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model for com.swiggy.hackathrone:Swiggy-API2-FetchRestaurantItems:0.0.1-SNAPSHOT
+[FATAL] Non-resolvable parent POM for com.swiggy.hackathrone:Swiggy-API2-FetchRestaurantItems:0.0.1-SNAPSHOT: Failure to transfer org.springframework.boot:spring-boot-starter-parent:pom:1.5.4.RELEASE from http://nexus:8081/nexus/content/groups/build.snapshots/ was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.boot:spring-boot-starter-parent:pom:1.5.4.RELEASE from/to central (http://nexus:8081/nexus/content/groups/build.snapshots/): nexus and 'parent.relativePath' points at no local POM @ line 14, column 10
+
+	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:197)
+	at org.apache.maven.model.building.DefaultModelBuilder.readParentExternally(DefaultModelBuilder.java:1029)
+	at org.apache.maven.model.building.DefaultModelBuilder.readParent(DefaultModelBuilder.java:800)
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:329)
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:161)
+	... 15 more
+
+!ENTRY org.eclipse.ui 4 4 2017-07-15 17:33:44.524
+!MESSAGE Conflicting handlers for org.eclipse.ui.navigate.backwardHistory: {ActionHandler(org.eclipse.ui.internal.NavigationHistoryAction@625c9248)} vs {ActionHandler(org.eclipse.ui.internal.dialogs.PreferencePageHistory$1@5f4098bd)}
+
+!ENTRY org.eclipse.jface.text 2 0 2017-07-15 17:40:06.143
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-07-15 17:40:06.146
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1002 2017-07-15 18:01:42.815
+!MESSAGE Unable to read repository at http://marketplace.eclipse.org/content/buildship-gradle-integration.
+!STACK 0
+java.io.IOException: http://marketplace.eclipse.org/content/buildship-gradle-integration is not a valid repository location.
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:102)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.GeneratedMethodAccessor192.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:396)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:199)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:463)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:152)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:130)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:74)
+
+!ENTRY org.eclipse.help.base 4 4 2017-07-15 19:14:26.353
+!MESSAGE Help documentation could not be indexed completely.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-07-15 19:14:26.353
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/extension-points/org_eclipse_wst_jsdt_core_codeFormatter.html cannot be opened.
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-07-15 19:14:47.572
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-07-15 19:14:59.971
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-07-15 19:15:01.817
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-07-15 19:15:04.312
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-07-15 19:15:10.097
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled

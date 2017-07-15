@@ -1,0 +1,16 @@
+package com.swiggy.hackathrone;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
+
+@RunWith(SpringRunner.class)
+@SpringBootTest
+public class SwiggyApi2FetchRestaurantItemsApplicationTests {
+
+	@Test
+	public void contextLoads() {
+	}
+
+}
