@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.swiggy.model.OrderDetails;
+import com.swiggy.model.OrderToRestaurants;
 import com.swiggy.model.RestaurantItems;
 import com.swiggy.model.Restaurants;
 
@@ -113,15 +113,14 @@ public class APIController {
 	// API3-Save order-working
 
 	@RequestMapping(value = "/saveOrder", method = RequestMethod.POST)
-	String saveOrder(@RequestBody List<OrderDetails> order) {
+	String saveOrder(@RequestBody List<OrderToRestaurants> order) {
 
 		Connection connection = null;
 		try {
 
 			connection = DriverManager.getConnection("jdbc:mysql://localhost/swiggy?" + "user=root&password=root");
 
-			String sql1 = "insert into order_items values(?,?,?)";
-			String sql2 = "insert into order_items values(?,?,?)";
+			String sql = "insert into order-items values(?,?,?)";
 
 		} catch (SQLException e) {
 			e.printStackTrace();

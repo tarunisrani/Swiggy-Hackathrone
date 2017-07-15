@@ -1,0 +1,19 @@
+CREATE TABLE `order_cust` (
+  `order_id` bigint(20) NOT NULL,
+  `customer_id` varchar(50) NOT NULL,
+  `customer_lat` varchar(50) DEFAULT NULL,
+  `customer_lng` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`order_id`, `customer_id`));
+
+
+CREATE TABLE `order_details_new` (
+  `order_id` bigint(20) NOT NULL,
+  `ordered_time` datetime DEFAULT NULL,
+  `payment_status` varchar(100) DEFAULT NULL,
+  `customer_id` varchar(50) DEFAULT NULL,
+  `customer_lat` varchar(50) DEFAULT NULL,
+  `customer_lng` varchar(50) DEFAULT NULL,
+  `customer_user_agent` varchar(50) DEFAULT NULL,
+  `payment_method` varchar(50) DEFAULT NULL,
+  `restaurant_id` int(11) NOT NULL,
+  PRIMARY KEY (`order_id`, `restaurant_id`));

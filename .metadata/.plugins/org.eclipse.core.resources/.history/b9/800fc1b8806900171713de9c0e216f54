@@ -1,0 +1,10 @@
+package com.swiggy.model;
+
+import java.util.List;
+
+public class OrderDetails {
+	long orderId;
+	long restId;
+	List<OrderItems> oi;
+
+}

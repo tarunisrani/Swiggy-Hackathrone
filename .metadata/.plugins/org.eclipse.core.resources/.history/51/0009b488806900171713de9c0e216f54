@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.swiggy.model.OrderDetails;
+import com.swiggy.model.OrderItems;
 import com.swiggy.model.RestaurantItems;
 import com.swiggy.model.Restaurants;
 
@@ -113,15 +113,23 @@ public class APIController {
 	// API3-Save order-working
 
 	@RequestMapping(value = "/saveOrder", method = RequestMethod.POST)
-	String saveOrder(@RequestBody List<OrderDetails> order) {
-
+	String saveOrder(@RequestBody List<OrderItems> order) {
+		List<RestaurantItems> ls = new ArrayList<>();
 		Connection connection = null;
 		try {
-
+			// Class.forName("com.sap.db.jdbc.Driver");
 			connection = DriverManager.getConnection("jdbc:mysql://localhost/swiggy?" + "user=root&password=root");
 
-			String sql1 = "insert into order_items values(?,?,?)";
-			String sql2 = "insert into order_items values(?,?,?)";
+			Statement st = connection.createStatement();
+
+			String query = "Select m.id, m.item_name, m.item_price from restaurants r inner join restaurant_menu m on r.id=m.restaurant_id and m.is_enabled=1 and r.id="
+					+ rest_Id;
+			ResultSet rs = st.executeQuery(query);
+
+			while (rs.next()) {
+				RestaurantItems item = new RestaurantItems(rs.getLong(1), rs.getString(2), rs.getDouble(3));
+				ls.add(item);
+			}
 
 		} catch (SQLException e) {
 			e.printStackTrace();
