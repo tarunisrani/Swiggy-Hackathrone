@@ -120,8 +120,7 @@ public class APIController {
 
 			connection = DriverManager.getConnection("jdbc:mysql://localhost/swiggy?" + "user=root&password=root");
 
-			String sql1 = "insert into order_items values(?,?,?)";
-			String sql2 = "insert into order_items values(?,?,?)";
+			String sql = "insert into order-items values(?,?,?)";
 
 		} catch (SQLException e) {
 			e.printStackTrace();

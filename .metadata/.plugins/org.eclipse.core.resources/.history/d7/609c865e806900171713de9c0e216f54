@@ -1,0 +1,35 @@
+package com.swiggy.model;
+
+import java.util.List;
+
+public class RestaurantToItems {
+	long restId;
+	List<OrderItems> oi;
+
+	public RestaurantToItems() {
+		super();
+	}
+
+	public RestaurantToItems(long restId, List<OrderItems> oi) {
+		super();
+		this.restId = restId;
+		this.oi = oi;
+	}
+
+	public long getRestId() {
+		return restId;
+	}
+
+	public void setRestId(long restId) {
+		this.restId = restId;
+	}
+
+	public List<OrderItems> getOi() {
+		return oi;
+	}
+
+	public void setOi(List<OrderItems> oi) {
+		this.oi = oi;
+	}
+
+}
