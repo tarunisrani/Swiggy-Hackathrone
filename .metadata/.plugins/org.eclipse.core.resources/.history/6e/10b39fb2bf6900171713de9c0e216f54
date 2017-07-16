@@ -155,7 +155,6 @@ public class APIController {
 
 		} catch (SQLException e) {
 			e.printStackTrace();
-			return "Fail";
 		}
 		return "Success";
 	}
