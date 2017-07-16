@@ -8,20 +8,19 @@ public class OrderSummary {
 	String restaurant_name;
 	int quantity;
 	double amount;
-	List<ItemSummary> items;
+	List<ItemSummary> ls;
 
 	public OrderSummary() {
 		super();
 	}
 
-	public OrderSummary(long restaurant_id, String restaurant_name, int quantity, double amount,
-			List<ItemSummary> items) {
+	public OrderSummary(long restaurant_id, String restaurant_name, int quantity, double amount, List<ItemSummary> ls) {
 		super();
 		this.restaurant_id = restaurant_id;
 		this.restaurant_name = restaurant_name;
 		this.quantity = quantity;
 		this.amount = amount;
-		this.items = items;
+		this.ls = ls;
 	}
 
 	public long getRestaurant_id() {
@@ -56,13 +55,12 @@ public class OrderSummary {
 		this.amount = amount;
 	}
 
-	public List<ItemSummary> getItems() {
-		return items;
+	public List<ItemSummary> getLs() {
+		return ls;
 	}
 
-	public void setItems(List<ItemSummary> items) {
-		this.items = items;
+	public void setLs(List<ItemSummary> ls) {
+		this.ls = ls;
 	}
 
-	
 }

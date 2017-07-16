@@ -222,7 +222,7 @@ public class APIController {
 	// API5- fetch order summary-done
 	@RequestMapping(value = "/ordersummary", method = RequestMethod.GET, produces = "application/json")
 	List<OrderSummary> orderSummary(@RequestParam("orderId") long orderId) {
-		List<OrderSummary> items = new ArrayList<>();
+		List<OrderSummary> ls = new ArrayList<>();
 		List<ItemSummary> is = new ArrayList<>();
 		Connection connection = null;
 		try {
@@ -241,7 +241,7 @@ public class APIController {
 				String rest_name = rs.getString(2);
 				Statement st1 = connection.createStatement();
 				String query1 = "select o.item_id, m.item_name, m.item_price, o.quantity from order_items o inner join restaurant_menu m on o.item_id=m.id and m.restaurant_id="
-						+ rest_id + " and o.order_id=" + orderId;
+						+ rest_id +" and o.order_id="+orderId;
 				ResultSet rs1 = st1.executeQuery(query1);
 				is = new ArrayList<>();
 				while (rs1.next()) {
@@ -256,13 +256,13 @@ public class APIController {
 					is.add(item);
 				}
 				os = new OrderSummary(rest_id, rest_name, restQty, restAmt, is);
-				items.add(os);
+				ls.add(os);
 			}
 
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		return items;
+		return ls;
 	}
 
 }
