@@ -186,7 +186,7 @@ public class APIController {
 			}
 
 			String query = "SELECT r.lat, r.lng, o.customer_lat, o.customer_lng from order_details_new o inner join restaurants r on o.restaurant_id=r.id and o.order_id="
-					+ orderId;
+					+ orderId + " and o.restaurant_id <> " + rest_id;
 			ResultSet rs = st.executeQuery(query);
 
 			while (rs.next()) {
@@ -215,8 +215,7 @@ public class APIController {
 			Statement st1 = connection.createStatement();
 
 			query = "SELECT id, name, avg_rating from restaurants where lat>= " + min_lat + "and lat <=" + max_lat
-					+ " and lng>=" + min_long + " and lng<=" + max_long + " and id <> " + rest_id
-					+ " order by avg_rating desc limit 50";
+					+ " and lng>=" + min_long + " and lng<=" + max_long + " order by avg_rating desc limit 50";
 			ResultSet rs1 = st1.executeQuery(query);
 
 			while (rs1.next()) {

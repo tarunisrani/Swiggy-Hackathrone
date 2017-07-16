@@ -21,7 +21,6 @@ import com.swiggy.model.OrderItems;
 import com.swiggy.model.OrderSummary;
 import com.swiggy.model.RestaurantItems;
 import com.swiggy.model.Restaurants;
-import com.swiggy.model.Status;
 
 @RestController
 public class APIController {
@@ -129,7 +128,7 @@ public class APIController {
 	// API3-Save order-done
 
 	@RequestMapping(value = "/saveorder", method = RequestMethod.POST)
-	Status saveOrder(@RequestBody OrderDetails order) {
+	String saveOrder(@RequestBody OrderDetails order) {
 
 		Connection connection = null;
 		try {
@@ -156,11 +155,9 @@ public class APIController {
 
 		} catch (SQLException e) {
 			e.printStackTrace();
-			Status st = new Status("Fail");
-			return st;
+			return "Fail";
 		}
-		Status st = new Status("Success");
-		return st;
+		return "Success";
 	}
 
 	// API4- fetch second restaurant-done
@@ -177,16 +174,16 @@ public class APIController {
 			connection = DriverManager.getConnection("jdbc:mysql://localhost/swiggy?" + "user=root&password=root");
 
 			Statement st = connection.createStatement();
-			Statement st2 = connection.createStatement();
-			ResultSet rs2 = st2.executeQuery("Select restaurant_id from order_details_new where order_id=" + orderId);
+			Statement st1 = connection.createStatement();
+			ResultSet rs1 = st1.executeQuery("Select restaurant_id from order_details_new where order_id=" + orderId);
 			long rest_id = 0;
-			while (rs2.next()) {
-				rest_id = rs2.getLong(1);
+			while (rs1.next()) {
+				rest_id = rs1.getLong(1);
 				break;
 			}
 
 			String query = "SELECT r.lat, r.lng, o.customer_lat, o.customer_lng from order_details_new o inner join restaurants r on o.restaurant_id=r.id and o.order_id="
-					+ orderId;
+					+ orderId + " and o.restaurant_id <> " + rest_id;
 			ResultSet rs = st.executeQuery(query);
 
 			while (rs.next()) {
@@ -215,8 +212,7 @@ public class APIController {
 			Statement st1 = connection.createStatement();
 
 			query = "SELECT id, name, avg_rating from restaurants where lat>= " + min_lat + "and lat <=" + max_lat
-					+ " and lng>=" + min_long + " and lng<=" + max_long + " and id <> " + rest_id
-					+ " order by avg_rating desc limit 50";
+					+ " and lng>=" + min_long + " and lng<=" + max_long + " order by avg_rating desc limit 50";
 			ResultSet rs1 = st1.executeQuery(query);
 
 			while (rs1.next()) {
